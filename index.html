@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Juan Rafael Simarro, Desarrolador, Aplicaciones, Aplicaciones web, Aplicaciones Mobile,Freelance">
+    <meta name="description" content="Mi web de presentación">
+	<meta name="author" content="rafax">
+	<meta name="owner" content="J.Rafael Simarro">
+    <title>J.Rafael Simarro</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li data-page=".targeta">Acerca de mi</li>
+                <li data-page=".portafolio">Proyectos</li>
+                <li data-page=".contacto">Contacto</li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="container">
+        <section class="targeta">
+            <div class="slide" id="slides">
+                <img src="./images/dev-1.jpg" alt="">
+                <img src="./images/dev-2.jpg" alt="">
+                <img src="./images/dev-3.jpg" alt="">
+                <i class="fa fa-chevron-left controls slidesjs-previous slidesjs-navigation" aria-hidden="true"></i>
+                <i class="fa fa-chevron-right controls slidesjs-next slidesjs-navigation" aria-hidden="true"></i>
+            </div>
+            
+            <div class="info">
+                <div class="info-dev">
+                    <h1>Hola! soy Juan Rafael Simarro</h1>
+                    <p class="description">Soy desarrollador inquieto y autodidacta en toda tecnología que me aporte algo.Realizo proyectos de todo tipo Mobile, Web , Desktop , para obtener mis servicios contacta conmigo desde la sección contacto o en mis redes sociales.</p>
+                </div>
+                <picture>
+                    <img src="./images/yo.png" alt="">
+                </picture>
+                
+            </div>
+            <div class="social hi-icon-wrap hi-icon-effect-8">
+                <a href="https://www.facebook.com/juanrafael.simarofaba" target="_blank"><i class="fa fa-facebook hi-icon"></i></a>
+                <a href="https://twitter.com/rafaxplayer" target="_blank"><i class="fa fa-twitter hi-icon"></i></a>
+                <a href="https://plus.google.com/u/0/103570118512241336112" target="_blank"><i class="fa fa-google-plus hi-icon"></i></a>
+            </div>
+        </section>
+        <section class="contacto">
+            <h3>Contacta Conmigo</h3>
+            <form action="" id="contacto">
+                <input type="text" name="name"placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea  name="message" placeholder="Tu Mensage" required></textarea>
+                <div class="buttons">
+                <button type="submit">Enviar</button><i title="Limpiar formulario" class="fa fa-window-maximize" aria-hidden="true"></i>
+                </div>
+            </form>
+        </section>
+        <section class="portafolio">
+            <ul>
+                <li>
+                    <div class="icon-back">
+                     <i class="fa fa-globe" aria-hidden="true"></i>
+                    </div>
+                    <article>
+                       
+                        <h3>Trabajos de desarrollo web</h3>
+                        <p>Las tecnologías de la web restan en constante avance y cambio , Yo intento mantenerme al día de todo lo que se cuece (que no es poco) para así dar el mejor servicio.
+                        </br>Un buen ejemplo de mi trabajo en Desarrollo web es esta misma pagina, también puedes ver algunos mas en el <spam>spoiler</spam> siguiente.</p>
+                        <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+                        <div class="spoiler">
+                            <a href="http://www.rafaxplayer.com/cooking-is-fun/recipes" target="_blank">Cocinar es divertido (Plataforma para editar y compartir Recetas de cocina)</a>
+                            <a href="http://www.rafaxplayer.com/cheftools/" target="_blank">ChefTools (Web de la aplicacion cheftools)</a>
+                            
+                        </div>
+                        
+                    </article>
+                    <div class="timeline"></div>
+                </li>
+                <li>
+                    <div class="icon-back">
+                    <i class="fa fa-android" aria-hidden="true"></i>
+                    </div>
+                    <article>
+                       
+                        <h3>Mobile (Android/IOS/Phonegap....)</h3>
+                        <p>Aplicaciones nativas con Android/ios hibridas con phonegap y frameworks como ionic , el desarrollo móvil ofrece muchas alternativas fascinantes para trabajar.</p>
+                        <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+                        <div class="spoiler">
+                            <a href="https://play.google.com/store/apps/details?id=com.ionicframework.babel795621" target="_blank">Babel (Traductor de idiomas)</a>
+                            <a href="https://play.google.com/store/apps/details?id=rafaxplayer.micocina" target="_blank">Mi Cocina (Aplicacion para gestionar recetas)</a>
+                            <a href="https://play.google.com/store/apps/details?id=rafaxplayer.cheftools" target="_blank">Herramientas para Chefs (Herramientas de gestion de una cocina profesional)</a>
+                        </div>
+                        
+                    </article>
+                    <div class="timeline"></div>
+                </li>
+                <li>
+                    <div class="icon-back">
+                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </div>
+                    <article>
+                       
+                        <h3>Aplicaciones Varias</h3>
+                        <p>Tambien he realizado trabajos para otro tipo de plataformas como aplicaciones de escritorio o extensiones para navegadores , etc...</p>
+                        <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+                        <div class="spoiler">
+                            <a href="https://mega.nz/#!9EE1xCgb!cg-Z9xgi8ItD3GMWTFqLLbnIME7hL2gH-9U_kW0rkIY">Notificator (Extension para Chrome)</a>
+                            
+                        </div>
+                        
+                    </article>
+                    
+                </li>
+            </ul>
+
+            
+        </section>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="https://smtpjs.com/smtp.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>  
