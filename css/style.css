@@ -125,7 +125,7 @@ section{
 }
 .targeta .info p{
     color:grey;
-     margin: 0;
+    margin: 0;
     padding: 0;
 }
 .targeta .social{
@@ -149,7 +149,7 @@ section{
 }
 .contacto{
 	
-	color: #333;
+	color: #696363;
 	background: black;
 	justify-content: center;
 	padding: 20px;
@@ -167,7 +167,12 @@ section{
 	color: #fff;
     border-color: #fff;
     border-width: 2px !important;
-    background-color: transparent
+    background-color: transparent;
+	
+}
+.contacto form input:first-of-type,
+.contacto form textarea{
+	text-transform: capitalize;
 }
 .contacto .buttons{
 	display: flex;
@@ -281,13 +286,34 @@ section{
 	padding: 5px 10px;
 	display: block;
 }
+.notfound{
+	padding: 30px 80px;
+	text-align: center;
+	color:whitesmoke;
+	flex-direction: column;
+
+}
+.notfound h2{
+	font-size: 10em;
+	margin: 0;
+}
+.notfound p{
+	margin: 0;
+	color: #b7adad;
+	font-size: 2em;
+}
+.notfound i{
+	font-size: 5em;
+	margin: 20px;
+}
+
 .contacto,
 .portafolio,
+.notfound,
 .portafolio ul li article .spoiler{
 	display: none;
 	
 }
-
 
 @media screen and (max-width:650px){
     

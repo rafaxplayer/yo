@@ -8,6 +8,7 @@
     <meta name="description" content="Mi web de presentación">
 	<meta name="author" content="rafax">
 	<meta name="owner" content="J.Rafael Simarro">
+    <link rel="shortcut icon" href="favicon.ico" />
     <title>J.Rafael Simarro</title>
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -17,9 +18,9 @@
     <header>
         <nav>
             <ul class="navigation">
-                <li data-page=".targeta">Acerca de mi</li>
-                <li data-page=".portafolio">Proyectos</li>
-                <li data-page=".contacto">Contacto</li>
+                <li><a href="/">Acerca de mi</a></li>
+                <li><a href="/proyects">Proyectos</a></li>
+                <li><a href="/contact">Contacto</a></li>
             </ul>
 
         </nav>
@@ -37,7 +38,8 @@
             <div class="info">
                 <div class="info-dev">
                     <h1>Hola! soy Juan Rafael Simarro</h1>
-                    <p class="description">Soy desarrollador inquieto y autodidacta en toda tecnología que me aporte algo.Realizo proyectos de todo tipo Mobile, Web , Desktop , para obtener mis servicios contacta conmigo desde la sección contacto o en mis redes sociales.</p>
+                    <p class="description">Soy desarrollador inquieto y autodidacta en toda tecnología que me aporte algo.</p>
+                    <p class="description">Realizo proyectos de todo tipo Mobile, Web , Desktop , para obtener mis servicios contacta conmigo desde la sección contacto o en mis redes sociales.</p>
                 </div>
                 <picture>
                     <img src="./images/yo.png" alt="">
@@ -119,12 +121,20 @@
                 </li>
             </ul>
 
+        </section>
+        <section class="notfound">
+            
+                <h2>404</h2>
+                <p>Sorry, Page not Found</p>
+                <i class="fa fa-frown-o" aria-hidden="true"></i>
+                <a href="/home">Click to home page</a>
             
         </section>
     </div>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/page.js"></script>
     <script src="js/jquery.slides.min.js"></script>
-    <script src="https://smtpjs.com/smtp.js"></script>
+    <script src="js/smtp.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>  

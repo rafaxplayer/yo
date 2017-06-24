@@ -1,4 +1,5 @@
-var current='.targeta'
+var current='.targeta';
+
 var serializeObject = function(form){
         var dArray = form.serializeArray();
         var objectData = {}
@@ -7,6 +8,38 @@ var serializeObject = function(form){
         }
         return objectData;
 }
+
+var getContainer = function(path){
+    switch(path){
+        case '/':
+            return '.targeta';
+        case '/home':
+            return '.targeta';
+        case '/proyects':
+            return '.portafolio';
+        case '/contact':
+            return '.contacto';
+        default:
+            return '.notfound';
+        
+
+    }
+         
+}
+
+var navigate = function(ctx){
+    console.log(ctx)
+    var container = getContainer(ctx.path);
+    console.log(container)
+    if(container != current){
+        $(current).fadeOut("fast","linear",function(){
+            $(container).fadeIn('slow');
+        });
+    }
+    current = container;
+
+}
+
 $(function() {
       $('#slides').slidesjs({
              
@@ -40,48 +73,43 @@ $(function() {
                 effect: "slide"
                     // [string] Can be either "slide" or "fade".
                 }
-
         
       });
-    $('.navigation li').on('click',function(e){
-        e.preventDefault();
-        $self = $(this);
-        if($self.attr('data-page') != current){
-            $(current).fadeOut("fast","linear",function(){
-                $($self.attr('data-page')).fadeIn('slow');
-            });
-            current = $(this).attr('data-page');
-        }
-          
-    });
-
+    
     $('.fa-angle-down').on('click',function(e){
         e.preventDefault();
         $(this).toggleClass('fa-angle-up fa-angle-down');
-        $(this).next().toggle("slow");
-        
-        
-             
+        $(this).next().slideToggle("slow");
+                  
     });
+
     $('.fa-window-maximize').on('click',function(e){
         e.preventDefault();
         $('#contacto')[0].reset();
                      
     });
+
     $('#contacto').on('submit',function(){
         
         var data = serializeObject($(this));
         Email.send(data.email,
                     "rafaxplayer72@gmail.com",
-                    data.name,
+                    "From: "+ data.name + " Email : " + data.email,
                     data.message,
                     "smtp.gmail.com",
                     "exhowi72@gmail.com",
                     "uuo03mskGHOd");
+        alert('Ok Correo enviado');
+        $(this)[0].reset();
         
         return false;
     });
+    page('/', navigate)
+    page('/home', navigate)
+    page('/proyects', navigate)
+    page('/contact', navigate)
+    page('/*',navigate)
+    page()
 
-    
 });
 
